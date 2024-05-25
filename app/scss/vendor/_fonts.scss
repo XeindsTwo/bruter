@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Vremena Grotesk Book';
+  src: url('../fonts/VremenaGroteskBook.woff2') format('woff2'),
+  url('../fonts/VremenaGroteskBook.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vremena Grotesk Book';
+  src: url('../fonts/VremenaGroteskMedium.woff2') format('woff2'),
+  url('../fonts/VremenaGroteskMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF NS Compressed';
+  src: url('../fonts/SFNSCompressed-Black.woff2') format('woff2'),
+  url('../fonts/SFNSCompressed-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF NS Compressed';
+  src: url('../fonts/SFNSCompressed-Bold.woff2') format('woff2'),
+  url('../fonts/SFNSCompressed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

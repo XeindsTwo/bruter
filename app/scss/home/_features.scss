@@ -1,0 +1,35 @@
+.features {
+  &__inner {
+    @include flex-column(40);
+    min-height: 715px;
+  }
+
+  &__list {
+    display: grid;
+    margin-top: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    @include flex-column(40);
+    align-items: center;
+  }
+
+  &__img {
+    @include flex-center;
+    min-height: 213px;
+    user-select: none;
+  }
+
+  &__name {
+    font-family: $sfpro;
+    font-size: 40px;
+    margin-top: auto;
+    font-weight: bold;
+    line-height: 0.9;
+    letter-spacing: -1.2px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Описание сайта">
+  <meta http-equiv="content-type" content="public, max-age=3600">
+  <meta name="theme-color" content="#fff"/>
+  <title>Access to your cryptocurrency</title>
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="body">
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a class="header__link desktop" href="#about">Особенности</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#prizes">Призы</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#competition">Центр</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#price">Стоимость</a>
+          </li>
+          <li>
+            <a class="header__link desktop" href="#participation">Принять участие</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="images/logo.svg" alt="логотип">
+      <div class="header__right">
+        <button class="tooltip" type="button" data-tooltip="header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M7.32374 11.7963C7.39366 11.866 7.44913 11.9488 7.48699 12.04C7.52484 12.1311 7.54433 12.2289 7.54433 12.3276C7.54433 12.4263 7.52484 12.524 7.48699 12.6152C7.44913 12.7064 7.39366 12.7892 7.32374 12.8588L7.00374 13.1788C6.66405 13.5198 6.26014 13.79 5.81536 13.9739C5.37058 14.1578 4.89377 14.2516 4.41249 14.2501C3.68769 14.2503 2.97912 14.0356 2.3764 13.633C1.77368 13.2304 1.30391 12.6582 1.02651 11.9886C0.749115 11.3189 0.676559 10.5821 0.818022 9.87125C0.959486 9.1604 1.30861 8.50747 1.82124 7.99509L3.99311 5.82321C4.45507 5.36132 5.03209 5.0313 5.66443 4.86731C6.29677 4.70332 6.96146 4.71132 7.58967 4.89049C8.21788 5.06966 8.78678 5.41348 9.23748 5.88637C9.68818 6.35925 10.0043 6.944 10.1531 7.58009C10.1778 7.6768 10.1829 7.77746 10.1681 7.87617C10.1533 7.97488 10.119 8.06965 10.0672 8.15493C10.0153 8.24021 9.94698 8.31428 9.86614 8.37281C9.78529 8.43133 9.69358 8.47313 9.59637 8.49576C9.49917 8.51839 9.39842 8.52138 9.30004 8.50458C9.20166 8.48777 9.10763 8.4515 9.02345 8.39789C8.93926 8.34427 8.86663 8.27439 8.8098 8.19235C8.75297 8.1103 8.71309 8.01774 8.69249 7.92009C8.60418 7.54461 8.4172 7.19952 8.15086 6.92051C7.88452 6.6415 7.54849 6.43869 7.17752 6.33304C6.80654 6.2274 6.41409 6.22275 6.04071 6.31958C5.66734 6.41641 5.32661 6.61121 5.05374 6.88384L2.88186 9.05571C2.57912 9.35821 2.37288 9.74369 2.28923 10.1634C2.20557 10.5831 2.24827 11.0182 2.41191 11.4137C2.57555 11.8091 2.85278 12.1472 3.20855 12.385C3.56432 12.6229 3.98264 12.75 4.41061 12.7501C4.69497 12.7509 4.97666 12.6953 5.23939 12.5865C5.50212 12.4777 5.74067 12.3179 5.94124 12.1163L6.26061 11.7963C6.3303 11.7263 6.41313 11.6708 6.50435 11.6329C6.59558 11.5949 6.69339 11.5754 6.79217 11.5754C6.89096 11.5754 6.98877 11.5949 7.07999 11.6329C7.17121 11.6708 7.25405 11.7263 7.32374 11.7963ZM14.1769 2.82321C13.4895 2.13603 12.5573 1.75 11.5853 1.75C10.6133 1.75 9.68114 2.13603 8.99374 2.82321L8.67436 3.14259C8.53346 3.28348 8.45431 3.47458 8.45431 3.67384C8.45431 3.87309 8.53346 4.06419 8.67436 4.20509C8.81526 4.34598 9.00635 4.42514 9.20561 4.42514C9.40487 4.42514 9.59596 4.34598 9.73686 4.20509L10.0569 3.88509C10.463 3.47897 11.0138 3.25082 11.5881 3.25082C12.1624 3.25082 12.7132 3.47897 13.1194 3.88509C13.5255 4.2912 13.7536 4.84201 13.7536 5.41634C13.7536 5.99067 13.5255 6.54147 13.1194 6.94759L10.9437 9.11634C10.7432 9.31797 10.5047 9.47781 10.2419 9.5866C9.97919 9.69539 9.69748 9.75096 9.41311 9.75009C8.9253 9.74974 8.4519 9.58461 8.0697 9.28149C7.6875 8.97836 7.41891 8.55501 7.30749 8.08009C7.2624 7.88631 7.14218 7.71839 6.97328 7.61325C6.80438 7.50811 6.60063 7.47437 6.40686 7.51946C6.21309 7.56455 6.04516 7.68476 5.94002 7.85366C5.83488 8.02256 5.80115 8.22631 5.84624 8.42009C6.03443 9.22438 6.4888 9.94152 7.13567 10.4552C7.78254 10.9689 8.58397 11.249 9.40999 11.2501H9.41311C9.89462 11.2514 10.3716 11.1572 10.8165 10.973C11.2614 10.7888 11.6653 10.5183 12.005 10.177L14.1769 8.00509C14.5172 7.66487 14.7871 7.26094 14.9713 6.81638C15.1554 6.37183 15.2502 5.89534 15.2502 5.41415C15.2502 4.93295 15.1554 4.45647 14.9713 4.01191C14.7871 3.56736 14.5172 3.16343 14.1769 2.82321Z"
+                fill="#fff"/>
+          </svg>
+          Поделиться
+        </button>
+        <span class="tooltip__copy header" data-tooltip="header">Скопировано!</span>
+      </div>
+      <button class="menu-btn menu-btn--header" type="button">
+        <span class="menu-btn__line"></span>
+        <span class="sr-only">Взаимодействовать с меню</span>
+      </button>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <nav class="header__nav mobile">
+      <div class="header__tooltip">
+        <button class="tooltip mobile" type="button" data-tooltip="header-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M7.32374 11.7963C7.39366 11.866 7.44913 11.9488 7.48699 12.04C7.52484 12.1311 7.54433 12.2289 7.54433 12.3276C7.54433 12.4263 7.52484 12.524 7.48699 12.6152C7.44913 12.7064 7.39366 12.7892 7.32374 12.8588L7.00374 13.1788C6.66405 13.5198 6.26014 13.79 5.81536 13.9739C5.37058 14.1578 4.89377 14.2516 4.41249 14.2501C3.68769 14.2503 2.97912 14.0356 2.3764 13.633C1.77368 13.2304 1.30391 12.6582 1.02651 11.9886C0.749115 11.3189 0.676559 10.5821 0.818022 9.87125C0.959486 9.1604 1.30861 8.50747 1.82124 7.99509L3.99311 5.82321C4.45507 5.36132 5.03209 5.0313 5.66443 4.86731C6.29677 4.70332 6.96146 4.71132 7.58967 4.89049C8.21788 5.06966 8.78678 5.41348 9.23748 5.88637C9.68818 6.35925 10.0043 6.944 10.1531 7.58009C10.1778 7.6768 10.1829 7.77746 10.1681 7.87617C10.1533 7.97488 10.119 8.06965 10.0672 8.15493C10.0153 8.24021 9.94698 8.31428 9.86614 8.37281C9.78529 8.43133 9.69358 8.47313 9.59637 8.49576C9.49917 8.51839 9.39842 8.52138 9.30004 8.50458C9.20166 8.48777 9.10763 8.4515 9.02345 8.39789C8.93926 8.34427 8.86663 8.27439 8.8098 8.19235C8.75297 8.1103 8.71309 8.01774 8.69249 7.92009C8.60418 7.54461 8.4172 7.19952 8.15086 6.92051C7.88452 6.6415 7.54849 6.43869 7.17752 6.33304C6.80654 6.2274 6.41409 6.22275 6.04071 6.31958C5.66734 6.41641 5.32661 6.61121 5.05374 6.88384L2.88186 9.05571C2.57912 9.35821 2.37288 9.74369 2.28923 10.1634C2.20557 10.5831 2.24827 11.0182 2.41191 11.4137C2.57555 11.8091 2.85278 12.1472 3.20855 12.385C3.56432 12.6229 3.98264 12.75 4.41061 12.7501C4.69497 12.7509 4.97666 12.6953 5.23939 12.5865C5.50212 12.4777 5.74067 12.3179 5.94124 12.1163L6.26061 11.7963C6.3303 11.7263 6.41313 11.6708 6.50435 11.6329C6.59558 11.5949 6.69339 11.5754 6.79217 11.5754C6.89096 11.5754 6.98877 11.5949 7.07999 11.6329C7.17121 11.6708 7.25405 11.7263 7.32374 11.7963ZM14.1769 2.82321C13.4895 2.13603 12.5573 1.75 11.5853 1.75C10.6133 1.75 9.68114 2.13603 8.99374 2.82321L8.67436 3.14259C8.53346 3.28348 8.45431 3.47458 8.45431 3.67384C8.45431 3.87309 8.53346 4.06419 8.67436 4.20509C8.81526 4.34598 9.00635 4.42514 9.20561 4.42514C9.40487 4.42514 9.59596 4.34598 9.73686 4.20509L10.0569 3.88509C10.463 3.47897 11.0138 3.25082 11.5881 3.25082C12.1624 3.25082 12.7132 3.47897 13.1194 3.88509C13.5255 4.2912 13.7536 4.84201 13.7536 5.41634C13.7536 5.99067 13.5255 6.54147 13.1194 6.94759L10.9437 9.11634C10.7432 9.31797 10.5047 9.47781 10.2419 9.5866C9.97919 9.69539 9.69748 9.75096 9.41311 9.75009C8.9253 9.74974 8.4519 9.58461 8.0697 9.28149C7.6875 8.97836 7.41891 8.55501 7.30749 8.08009C7.2624 7.88631 7.14218 7.71839 6.97328 7.61325C6.80438 7.50811 6.60063 7.47437 6.40686 7.51946C6.21309 7.56455 6.04516 7.68476 5.94002 7.85366C5.83488 8.02256 5.80115 8.22631 5.84624 8.42009C6.03443 9.22438 6.4888 9.94152 7.13567 10.4552C7.78254 10.9689 8.58397 11.249 9.40999 11.2501H9.41311C9.89462 11.2514 10.3716 11.1572 10.8165 10.973C11.2614 10.7888 11.6653 10.5183 12.005 10.177L14.1769 8.00509C14.5172 7.66487 14.7871 7.26094 14.9713 6.81638C15.1554 6.37183 15.2502 5.89534 15.2502 5.41415C15.2502 4.93295 15.1554 4.45647 14.9713 4.01191C14.7871 3.56736 14.5172 3.16343 14.1769 2.82321Z"
+                fill="#fff"/>
+          </svg>
+          Поделиться
+        </button>
+        <span class="tooltip__copy header" data-tooltip="header-mobile">Скопировано!</span>
+      </div>
+      <ul class="header__list">
+        <li>
+          <a class="header__link mobile" href="#about">Особенности</a>
+        </li>
+        <li>
+          <a class="header__link mobile" href="#prizes">Призы</a>
+        </li>
+        <li>
+          <a class="header__link mobile" href="#competition">Центр</a>
+        </li>
+        <li>
+          <a class="header__link mobile" href="#price">Стоимость</a>
+        </li>
+        <li>
+          <a class="header__link mobile" href="#participation">Принять участие</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="home section" id="home">
+  <div class="container">
+    <div class="home__inner">
+
+    </div>
+  </div>
+</section>
+  <section class="key indent">
+  <div class="container">
+    <div class="key__top">
+      <p class="key__text">
+        Have you ever dreamed of a key that unlocks the cryptocurrency world?
+      </p>
+      <h2 class="title-section center">We have it!</h2>
+    </div>
+    <img class="key__img" src="images/key.png" alt="decor">
+  </div>
+</section>
+  <section class="about indent" id="about">
+  <div class="container">
+    <div class="about__inner">
+      <span class="about__subtitle">
+        Our software is a way to a new level of financial management.
+      </span>
+      <div class="about__content">
+        <span class="about__saved">Saved</span>
+        <span class="about__value">$10mln</span>
+        <p class="about__text">
+          We don't just restore access to your wallet, we create endless possibilities.
+        </p>
+      </div>
+      <img class="about__img" src="images/about.webp" alt="decor">
+    </div>
+  </div>
+</section>
+  <section class="price indent" id="prices">
+  <div class="container">
+    <div class="price__top">
+      <h2 class="title-section">Price</h2>
+      <p class="price__subtext">
+        Are you ready to access your cryptocurrency wealth without any restrictions?
+      </p>
+    </div>
+    <ul class="price__list">
+      <li class="price__item">
+        <div class="price__plan">
+          <span class="price__status">Permanently</span>
+          <div class="price__product">
+            <img src="images/icons/btc.svg" width="34" height="34" alt="bitcoin plan">
+            <span class="price__name">BTC plan</span>
+          </div>
+        </div>
+        <div class="price__content">
+          <span class="price__value">$500</span>
+          <p class="price__description">
+            Free software updates, 24/7 support
+          </p>
+          <ul class="price__marks">
+            <li>Technical support 24/7</li>
+            <li>Easy installation</li>
+            <li>Checking 200 million per day</li>
+          </ul>
+        </div>
+        <a class="price__link" target="_blank" href="https://t.me/Brute_admin">Contact to buy</a>
+      </li>
+      <li class="price__item">
+        <div class="price__plan">
+          <span class="price__status">Permanently</span>
+          <div class="price__product">
+            <img src="images/icons/eth.svg" width="34" height="34" alt="ethereum plan">
+            <span class="price__name">ETH plan</span>
+          </div>
+        </div>
+        <div class="price__content">
+          <span class="price__value">$700</span>
+          <p class="price__description">
+            Free software updates, 24/7 support
+          </p>
+          <ul class="price__marks">
+            <li>Technical support 24/7</li>
+            <li>Easy installation</li>
+            <li>Checking 200 million per day</li>
+            <li>More profitable then BTC</li>
+          </ul>
+        </div>
+        <a class="price__link" target="_blank" href="https://t.me/Brute_admin">Contact to buy</a>
+      </li>
+      <li class="price__item">
+        <div class="price__plan">
+          <span class="price__status">Permanently</span>
+          <div class="price__product">
+            <img src="images/icons/bnb.svg" width="34" height="34" alt="BNB plan">
+            <span class="price__name">BNB Plan</span>
+          </div>
+        </div>
+        <div class="price__content">
+          <span class="price__value">$900</span>
+          <p class="price__description">
+            Free software updates, 24/7 support
+          </p>
+          <ul class="price__marks">
+            <li>Technical support 24/7</li>
+            <li>Easy installation</li>
+            <li>Checking 200 million per day</li>
+            <li>More profitable then BTC</li>
+            <li>Checks all coins in BEP-20</li>
+          </ul>
+        </div>
+        <a class="price__link" target="_blank" href="https://t.me/Brute_admin">Contact to buy</a>
+      </li>
+      <li class="price__item popular">
+        <div class="price__plan">
+          <span class="price__status">Permanently</span>
+          <div class="price__product">
+            <img src="images/icons/all.svg" width="34" height="34" alt="all coins">
+            <span class="price__name">All coins</span>
+          </div>
+        </div>
+        <div class="price__content">
+          <span class="price__value">$1500</span>
+          <p class="price__description">
+            Free software updates, 24/7 support
+          </p>
+          <ul class="price__marks">
+            <li>Technical support 24/7</li>
+            <li>Easy installation</li>
+            <li>Checking 200 million per day</li>
+            <li>More profitable then BTC</li>
+            <li>Checks all coins in BEP-20</li>
+            <li>Checking NFTs (ERC-20 and BEP-20)</li>
+          </ul>
+        </div>
+        <a class="price__link" target="_blank" href="https://t.me/Brute_admin">Contact to buy</a>
+        <img class="price__popular" width="190" height="25.5" src="images/popular.svg" alt="most popular">
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="features indent" id="features">
+  <div class="container">
+    <div class="features__inner">
+      <h2 class="title-section">Features</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <div class="features__img">
+            <img src="images/features/1.png" alt="Perfectly working software">
+          </div>
+
+          <span class="features__name">
+          Perfectly working software
+        </span>
+        </li>
+        <li class="features__item">
+          <div class="features__img">
+            <img src="images/features/2.png" alt="Support">
+          </div>
+
+          <span class="features__name">
+          Support for: <br> BTC or ETH and BNB
+        </span>
+        </li>
+        <li class="features__item">
+          <div class="features__img">
+            <img src="images/features/3.png" alt="Satisfied clients">
+          </div>
+
+          <span class="features__name">
+          Over 700 satisfied clients
+        </span>
+        </li>
+        <li class="features__item">
+          <div class="features__img">
+            <img src="images/features/4.png" alt="Profit">
+          </div>
+
+          <span class="features__name">
+          Profit without <br> any risk
+        </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+  <section class="indent" id="reviews">
+  <div class="container">
+    <h2 class="title-section center bottom">Reviews</h2>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <h3 class="reviews__subtitle">
+          Seamless Discovery: Automated Search for Free Crypto Wallets Delivers!
+        </h3>
+        <p class="reviews__text">
+          This program is a gem! It autonomously locates wallets loaded with free crypto. The simplicity and efficiency
+          bring immense satisfaction. It’s like uncovering hidden treasures effortlessly. Highly recommended for all
+          crypto enthusiasts! Have earned about 3 ETH in 1 month!
+        </p>
+        <div class="reviews__info">
+          <span class="reviews__name">John </span>
+          <time class="reviews__date" datetime="2024-05-20">May 20</time>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <h3 class="reviews__subtitle">
+          Effortless Bounty: Auto-Find Free Crypto Wallets, a Joyful Experience!
+        </h3>
+        <p class="reviews__text">
+          I’m delighted with this tool! It automatically uncovers wallets filled with free cryptocurrency. The
+          convenience and excitement it brings are unmatched. Using it is like embarking on a treasure hunt with
+          guaranteed success. A must-have for anyone in the crypto world!
+        </p>
+        <div class="reviews__info">
+          <span class="reviews__name">Pcfix</span>
+          <time class="reviews__date" datetime="2024-04-14">April 14</time>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <h3 class="reviews__subtitle">
+          Automated Bliss: Discover Free Crypto Wallets with Ease and Joy!
+        </h3>
+        <p class="reviews__text">
+          What a joy to use! This program effortlessly reveals multiple wallets with free crypto. It’s like stumbling
+          upon a fountain of wealth in the crypto universe. The satisfaction and excitement it brings are beyond
+          compare. A game-changer for crypto enthusiasts!
+        </p>
+        <div class="reviews__info">
+          <span class="reviews__name">Cryptonix</span>
+          <time class="reviews__date" datetime="2024-03-08">March 8</time>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <h3 class="reviews__subtitle">
+          Unmatched Delight: Auto-Search for Free Crypto Wallets, Pure Happiness!
+        </h3>
+        <p class="reviews__text">
+          This tool is a game-changer! It autonomously detects wallets filled with free cryptocurrency. The convenience
+          and thrill it brings are unparalleled. Using it feels like having a personal assistant for crypto wealth
+          discovery. A joyful journey awaits with every click!
+        </p>
+        <div class="reviews__info">
+          <span class="reviews__name">Maxx</span>
+          <time class="reviews__date" datetime="2024-03-21">March 21</time>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="faq indent" id="faq">
+  <div class="container">
+    <h2 class="title-section center bottom">Faq</h2>
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">Why do you sell software and not make money yourself?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          Initially I wrote the software not for sale. Back in 2020, 3 years ago, I used the software myself and some of
+          my friends. But since my income has not dropped during this time, and wallets that exist in the world there
+          are billions and becomes even more, I decided to earn even more and sell the software, it has absolutely no
+          effect on my income from software, but also brings additional profit.
+        </p>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">What guarantees?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          I can't guarantee that you will find 10 bitcoins or pay off the program in 1 day. BUT I guarantee that if you
+          don't find the wallets within a week, I will pay you back!
+        </p>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">Money out of thin air?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          As for me, this is one of the most difficult moneys, as I spent a lot of time fixing bugs, writing code, etc.
+          over these 3 years. I worked around the clock and spent many sleepless nights at the monitor. For me, this is
+          a huge work done!
+        </p>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">Is it legal?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          Given that most wallets are old forgotten crypto wallets whose owners have most likely forgotten their
+          accesses to them, I think legally. I compare it to looking for gold jewelry by the sea-coast, when people with
+          a device walk around looking for lost rings, earrings, etc., no one can say it's illegal. I think it is the
+          same here!
+        </p>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">Can I install it on my phone?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          Yes, can you do it.
+        </p>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head">
+          <h3 class="faq__title">How much a day will I earn?</h3>
+          <button class="faq__btn" data-toggle="answer">
+            <span class="sr-only">Learn the answer</span>
+          </button>
+        </div>
+        <p class="faq__text">
+          All as individual as possible. Sometimes a day absolutely nothing finds, even a few days of silence can be,
+          sometimes in a day finds 5-10 wallets at once.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="footer" id="community">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <img src="images/logo.svg" width="134" height="20" alt="logo">
+      </div>
+      <ul class="footer__list">
+        <li>
+          <a class="footer__link desktop" href="#home">Home</a>
+        </li>
+        <li>
+          <a class="footer__link desktop" href="">Information</a>
+        </li>
+        <li>
+          <a class="footer__link desktop" href="#prices">Pricing</a>
+        </li>
+        <li>
+          <a class="footer__link desktop" href="#features">Features</a>
+        </li>
+        <li>
+          <a class="footer__link desktop" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+      <div class="footer__right">
+        <a class="footer__join" href="https://t.me/brute_crypto" target="_blank">
+          Join telegram
+          <span class="round"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="js/main.min.js" type="module"></script>

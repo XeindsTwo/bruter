@@ -1,0 +1,32 @@
+.reviews {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+
+  &__item {
+    border-radius: 16px;
+    background-color: $deep-abyss;
+    padding: 32px;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-family: $sfpro;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    line-height: .9;
+  }
+
+  &__text {
+    color: $silver-whisper;
+    margin-bottom: 48px;
+  }
+
+  &__info {
+    @include flex-between-center-gap(50);
+  }
+}

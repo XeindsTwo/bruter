@@ -1,0 +1,54 @@
+.about {
+  &__inner {
+    @include flex-column(40);
+    position: relative;
+    min-height: 615px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: $deep-abyss;
+  }
+
+  &__subtitle {
+    font-family: $sfpro;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0.9;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    max-width: 329px;
+    display: block;
+  }
+
+  &__content {
+    margin-top: auto;
+  }
+
+  &__saved {
+    color: $silver-whisper;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__value {
+    font-family: $sfpro;
+    font-size: 88px;
+    font-weight: 1000;
+    line-height: 0.9;
+    letter-spacing: -2.64px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: block;
+  }
+
+  &__text {
+    max-width: 290px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -70%;
+    right: 0;
+    user-select: none;
+  }
+}

@@ -1,0 +1,87 @@
+.faq {
+  &__list {
+    @include flex-column(32);
+    max-width: 672px;
+    margin: 0 auto;
+  }
+
+  &__head {
+    @include flex-between(20);
+    transition: color .4s;
+    cursor: pointer;
+
+    &:hover {
+      color: $lavender-bliss;
+    }
+  }
+
+  &__title {
+    font-family: $sfpro;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: .9;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    max-width: 622px;
+  }
+
+  &__text {
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    color: $silver-whisper;
+    max-width: 624px;
+    transition: max-height 0.3s ease, margin-top 0.3s ease;
+
+    &.open {
+      margin-top: 24px;
+    }
+  }
+
+  &__btn {
+    width: 28px;
+    height: 28px;
+    position: relative;
+
+    &:focus {
+      &::after {
+        opacity: 0;
+      }
+
+      &::before {
+        background-color: $lavender-bliss;
+      }
+    }
+
+    &.open {
+      &::after {
+        opacity: 0;
+      }
+    }
+
+    &::before, &::after {
+      @include pseudo;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 14px;
+      height: 2px;
+      background: $white;
+      opacity: 1;
+      box-shadow: none;
+      transition: opacity .4s, background-color .4s;
+
+      @include r($sm) {
+        width: 14px;
+      }
+    }
+
+    &::before {
+      @include topLeft50;
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
