@@ -3,12 +3,38 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
+    @media (max-width: 810px) {
+      grid-gap: 10px;
+    }
+    @media (max-width: 710px) {
+      grid-gap: 12px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include r($phone) {
+      margin: 0 -8px;
+    }
   }
 
   &__item {
+    @include flex-column(0);
     border-radius: 16px;
     background-color: $deep-abyss;
     padding: 32px;
+    @media (max-width: 1300px) {
+      padding: 30px 28px;
+    }
+    @include r($lg) {
+      border-radius: 12px;
+    }
+    @media (max-width: 830px) {
+      padding: 26px;
+    }
+    @include r($sm) {
+      padding: 25px 22px;
+    }
+    @include r($phone) {
+      padding: 24px 18px;
+    }
   }
 
   &__subtitle {
@@ -19,14 +45,37 @@
     letter-spacing: -1.2px;
     text-transform: uppercase;
     line-height: .9;
+    @include r($desktop) {
+      font-size: 36px;
+      letter-spacing: -1px;
+    }
+    @include r($lg) {
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: -.5px;
+    }
+    @media (max-width: 420px) {
+      font-size: 30px;
+      letter-spacing: -.3px;
+    }
+    @media (max-width: 360px) {
+      font-size: 28px;
+    }
   }
 
   &__text {
     color: $silver-whisper;
     margin-bottom: 48px;
+    @include r($tablet) {
+      margin-bottom: 40px;
+    }
+    @include r($phone) {
+      font-size: 15px;
+    }
   }
 
   &__info {
+    margin-top: auto;
     @include flex-between-center-gap(50);
   }
 }

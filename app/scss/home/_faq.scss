@@ -23,6 +23,37 @@
     letter-spacing: -1.2px;
     text-transform: uppercase;
     max-width: 622px;
+    @include r($lg) {
+      font-size: 36px;
+      max-width: 550px;
+      letter-spacing: -1px;
+    }
+    @include r($tablet) {
+      font-size: 34px;
+      max-width: 500px;
+      line-height: 1;
+    }
+    @include r($sm) {
+      font-size: 30px;
+      letter-spacing: -.7px;
+      max-width: 365px;
+    }
+    @include r($phone) {
+      max-width: 320px;
+    }
+    @media (max-width: 413px) {
+      max-width: 300px;
+      letter-spacing: -.4px;
+    }
+    @media (max-width: 394px) {
+      max-width: 280px;
+    }
+    @media (max-width: 380px) {
+      max-width: 270px;
+    }
+    @media (max-width: 365px) {
+      max-width: 260px;
+    }
   }
 
   &__text {
@@ -32,25 +63,28 @@
     color: $silver-whisper;
     max-width: 624px;
     transition: max-height 0.3s ease, margin-top 0.3s ease;
+    @include r($sm) {
+      transition: max-height 0.5s ease, margin-top 0.5s ease;
+    }
 
     &.open {
       margin-top: 24px;
+      @include r($sm) {
+        margin-top: 18px;
+      }
     }
   }
 
   &__btn {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
     position: relative;
+    transition: border .4s;
 
     &:focus {
-      &::after {
-        opacity: 0;
-      }
-
-      &::before {
-        background-color: $lavender-bliss;
-      }
+      border-color: $lavender-bliss;
     }
 
     &.open {

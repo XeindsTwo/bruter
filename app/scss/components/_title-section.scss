@@ -6,6 +6,23 @@
   font-weight: 1000;
   text-transform: uppercase;
   max-width: max-content;
+  @include r($desktop) {
+    font-size: 84px;
+  }
+  @include r($lg) {
+    font-size: 78px;
+    letter-spacing: -2px;
+  }
+  @include r($tablet) {
+    font-size: 74px;
+    letter-spacing: -1.6px;
+  }
+  @include r($sm) {
+    font-size: 70px;
+  }
+  @media (max-width: 560px) {
+    font-size: 66px;
+  }
 
   &.center {
     margin: 0 auto;
@@ -13,5 +30,8 @@
 
   &.bottom {
     margin: 0 auto 48px;
+    @include r($tablet) {
+      margin-bottom: 42px;
+    }
   }
 }

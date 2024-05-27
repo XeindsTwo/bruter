@@ -62,3 +62,40 @@ for (const anchor of anchors) {
     });
   });
 })();
+
+new Swiper('.price__swiper', {
+  speed: 400,
+  loop: false,
+  breakpoints: {
+    1260: {
+      slidesPerView: 4,
+      spaceBetween: 16
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 12
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    425: {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      freeMode: {
+        enabled: true
+      },
+    },
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      freeMode: {
+        enabled: false
+      },
+    }
+  },
+  navigation: {
+    prevEl: '.price__btn--prev',
+    nextEl: '.price__btn--next'
+  }
+});

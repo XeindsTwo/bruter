@@ -1,6 +1,12 @@
 .footer {
   margin-top: 64px;
   padding-bottom: 13px;
+  @media (max-width: 830px) {
+    padding-bottom: 18px;
+  }
+  @include r($sm) {
+    margin-top: 72px;
+  }
 
   img {
     user-select: none;
@@ -8,27 +14,62 @@
 
   &__inner {
     font-size: 14px;
-    @include flex-between(30);
+    @include flex-between-center-gap(30);
+    @media (max-width: 830px) {
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    @include r($phone) {
+      gap: 30px;
+    }
   }
 
   &__left, &__right {
     max-width: 134px;
     width: 100%;
+    @media (max-width: 830px) {
+      max-width: max-content;
+    }
+  }
+
+  &__left {
+    @media (max-width: 830px) {
+      order: -1;
+    }
   }
 
   &__right {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 830px) {
+      order: 0;
+      justify-content: flex-start;
+    }
   }
 
   &__list {
     @include flex-align-center(24);
+    @media (max-width: 830px) {
+      width: 100%;
+      order: 1;
+    }
+    @include r($phone) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 17px;
+    }
   }
 
   &__link {
     border-bottom: 1px solid transparent;
     padding-bottom: 1px;
     transition: color .4s, border .4s;
+    @include r($phone) {
+      font-size: 16px;
+    }
+    @media (max-width: 375px) {
+      font-size: 15px;
+    }
 
     &:hover {
       color: $lavender-bliss;

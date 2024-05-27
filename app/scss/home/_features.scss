@@ -2,23 +2,101 @@
   &__inner {
     @include flex-column(40);
     min-height: 715px;
+    @media (max-width: 1320px) {
+      min-height: 660px;
+    }
+    @include r($desktop) {
+      min-height: 620px;
+    }
+    @media (max-width: 1100px) {
+      min-height: 590px;
+    }
+    @media (max-width: 1060px) {
+      gap: 50px;
+      align-items: center;
+    }
+    @media (max-width: 540px) {
+      min-height: auto;
+      gap: 55px;
+      margin: 0 -15px;
+    }
   }
 
   &__list {
     display: grid;
     margin-top: auto;
     grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 1060px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px 30px;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+    @media (max-width: 540px) {
+      display: flex;
+      max-width: 100%;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      padding-bottom: 18px;
+      &::-webkit-scrollbar {
+        height: 9px;
+      }
+    }
+    @include r($phone) {
+      gap: 20px;
+    }
+    @media (max-width: 405px) {
+      gap: 14px;
+    }
   }
 
   &__item {
     @include flex-column(40);
     align-items: center;
+    @media (max-width: 1060px) {
+      gap: 30px;
+      max-width: 280px;
+    }
+    @media (max-width: 540px) {
+      min-width: 260px;
+    }
+    @media (max-width: 380px) {
+      min-width: 243px;
+    }
   }
 
   &__img {
     @include flex-center;
     min-height: 213px;
     user-select: none;
+    @media (max-width: 1300px) {
+      min-height: 208px;
+    }
+    @media (max-width: 1100px) {
+      min-height: 190px;
+    }
+    @include r($tablet) {
+      min-height: 180px;
+    }
+    @include r($sm) {
+      min-height: 170px;
+    }
+
+    img {
+      @media (max-width: 1300px) {
+        height: auto;
+        width: 95%;
+      }
+      @media (max-width: 1100px) {
+        width: 90%;
+      }
+      @include r($tablet) {
+        width: 83%;
+      }
+      @include r($sm) {
+        width: 78%;
+      }
+    }
   }
 
   &__name {
@@ -31,5 +109,21 @@
     text-align: center;
     display: block;
     text-transform: uppercase;
+    @include r($desktop) {
+      font-size: 36px;
+      line-height: .92;
+      letter-spacing: -1px;
+    }
+    @media (max-width: 1100px) {
+      font-size: 34px;
+    }
+    @media (max-width: 1060px) {
+      letter-spacing: -.7px;
+    }
+    @include r($phone) {
+      font-size: 32px;
+      line-height: .97;
+      letter-spacing: 0;
+    }
   }
 }
