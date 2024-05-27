@@ -5,16 +5,51 @@
     text-align: center;
     max-width: 458px;
     margin: 0 auto;
+    @include r($lg) {
+      max-width: 410px;
+    }
+    @include r($sm) {
+      max-width: 380px;
+    }
+    @include r($phone) {
+      max-width: 340px;
+    }
+  }
+
+  &__title {
+    @include r($tablet) {
+      font-size: 66px;
+    }
+    @include r($sm) {
+      font-size: 60px;
+      letter-spacing: -1px;
+    }
+    @include r($phone) {
+      font-size: 52px;
+    }
   }
 
   &__text {
     font-size: 22px;
     color: $silver-whisper;
+    @include r($lg) {
+      font-size: 20px;
+    }
+    @include r($sm) {
+      font-size: 18px;
+    }
   }
 
   &__img {
     @include objectCoverBg;
     margin: 0 auto;
     user-select: none;
+    @media (max-width: 890px) {
+      width: auto;
+      height: 420px;
+    }
+    @include r($sm) {
+      height: 370px;
+    }
   }
 }
