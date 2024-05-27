@@ -1,3 +1,79 @@
 .home {
+  @include bg;
+  background-color: $lavender-bliss150;
+  border-radius: 16px;
+  margin: 0 8px;
+  position: relative;
+  background-image: url("../images/home.png");
 
+  &__inner {
+    display: flex;
+    min-height: 98vh;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-left: 160px;
+    max-width: 1114px;
+  }
+
+  &__title {
+    font-family: $sfpro;
+    font-size: 120px;
+    font-weight: 1000;
+    line-height: .9;
+    letter-spacing: -3.6px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+      margin-right: 10px;
+      transform: translateY(-10%);
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    max-width: 492px;
+  }
+
+  &__link {
+    max-width: max-content;
+    margin-top: auto;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1.1;
+    background-color: $white;
+    padding: 33px 43px;
+    width: 100%;
+    border-radius: 152px;
+    color: $midnight-sky;
+    border: 2px solid transparent;
+    transition: color .5s, border .5s, background-color .5s;
+
+    &:hover {
+      background-color: $midnight-sky;
+      color: $white;
+    }
+
+    &:focus {
+      background-color: transparent;
+      border-color: $white;
+      color: $white;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+  }
 }

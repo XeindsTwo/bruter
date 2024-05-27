@@ -1,3 +1,83 @@
 .header {
+  padding-top: 20px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  width: 100%;
 
+  &__inner {
+    @include flex-between-center-gap(30);
+  }
+
+  &__logo, &__right {
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  &__right {
+    justify-content: flex-end;
+  }
+
+  &__list {
+    @include flex-align-center(20);
+  }
+
+  &__link {
+    transition: color .4s, border .4s, opacity .4s;
+    border-radius: 4px;
+    padding: 2px 4px;
+    border: 1px solid transparent;
+    font-size: 14px;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:focus {
+      border-color: $white;
+    }
+  }
+
+  &__btn {
+    max-width: max-content;
+    font-weight: 500;
+    color: $white;
+    padding: 8px 12px;
+    position: relative;
+    line-height: 1.1;
+    display: block;
+    overflow: hidden;
+    height: auto;
+    font-size: 14px;
+    border-radius: 56px;
+    border: 2px solid rgba($white, .4);
+    transition: color .4s, border .4s, background-color .4s;
+
+    span {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background-color: $blue100;
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    &:hover {
+      border-color: $blue100;
+
+      span {
+        width: 225%;
+        height: 562.5px;
+      }
+    }
+
+    &:focus {
+      background-color: $blue100;
+      border-color: $blue100;
+    }
+  }
 }

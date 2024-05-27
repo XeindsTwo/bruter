@@ -1,4 +1,3 @@
-/*
 .menu-btn {
   height: 44px;
   width: 44px;
@@ -10,19 +9,19 @@
   position: relative;
   border-radius: 50%;
   transition: all .4s;
-  background-color: $light-gray;
+  background-color: $midnight-sky;
   border: 1px solid transparent;
 
   &:hover {
-    background-color: $deep-purple;
+    background-color: $lavender-bliss;
 
     .menu-btn__line, .menu-btn__line::after, .menu-btn__line::before {
-      background-color: $deep-forest-green;
+      background-color: $white;
     }
   }
 
   &:focus {
-    background-color: rgba($deep-purple, .2);
+    background-color: rgba($lavender-bliss, .2);
 
     .menu-btn__line, .menu-btn__line::after, .menu-btn__line::before {
       background-color: $white;
@@ -38,7 +37,7 @@
   &__line,
   &__line::after,
   &__line::before {
-    background-color: $midnight-blue;
+    background-color: $white;
     content: '';
     left: 0;
     top: 0;
@@ -67,7 +66,7 @@
 
   &.active {
     background-color: transparent;
-    border-color: $deep-purple;
+    border-color: $lavender-bliss;
 
     .menu-btn__line {
       background: transparent;
@@ -78,15 +77,15 @@
         margin-top: 0;
         transform: rotate(-45deg);
         transition-delay: .4s;
-        background-color: $deep-purple;
+        background-color: $lavender-bliss;
       }
 
       &::after {
         margin-top: 0;
         transform: rotate(45deg);
         transition-delay: .4s;
-        background-color: $deep-purple;
+        background-color: $lavender-bliss;
       }
     }
   }
-}*/
+}
